@@ -1,6 +1,6 @@
 # InWorld.ai Example
 
-This is an example scene to create AI NPCs backed by [InWorlds.ai](https://inworld.ai/arcade) service
+This is an example scene to create AI NPCs backed by [inworld.ai](https://inworld.ai/arcade) service
 
 Deployed here 
 
@@ -16,7 +16,7 @@ It adds the additional configuration for an NPC that talks to a remote server fo
 StreamedMessage (`src/aiNpc/npc/streamedMsgs.ts`) is a utilty that implements an Iterator pattern to enable the scene to group messages from InWorld and use them with the NPC Dialog in a serial and squential way.
 
 ```
-received stream of all InWorld messages all at once
+received stream of all inworld messages all at once
 show utterance1
 player clicks next
 show utterance2
@@ -50,7 +50,7 @@ const VARIABLE: Record<string, string> = {
 
 `ENV` - The environment for which values are to be used (local,dev,prod,etc.)
 
-`COLYSEUS_ENDPOINT_URL` - Websocker endpoint
+`COLYSEUS_ENDPOINT_URL` - Websocket endpoint
 
 ```
 const COLYSEUS_ENDPOINT_URL: Record<string, string> = {
@@ -99,7 +99,7 @@ const myRemoteNPC = new RemoteNpc(
 Optional...if you only want to see the code in action no need run the proxy server.  The example scene is pointed our Genesis Plaza proxy server so you should be able to fully run these example scene without the server side.  Should you choose create your own scene and characters you will need to run your own server.
 
 
-To create your own scene and characters follow the documentation found here [https://docs.inworld.ai/docs/intro](https://docs.inworld.ai/docs/intro).   Once you are finished run your local server.  
+To create your own scene and characters follow the documentation found here [https://docs.inworld.ai/docs/intro](https://docs.inworld.ai/docs/intro). Once you are finished run your local server.  
 
 Instructions here [https://github.com/decentraland-scenes/inworlds-colyseus-proxy-service#readme](https://github.com/decentraland-scenes/inworlds-colyseus-proxy-service#readme)
 
@@ -112,7 +112,7 @@ const ENV = "prd"
 to
 const ENV = "local"
 ```
-> This will make is so your scene uses local: "ws://127.0.0.1:2567" from the COLYSEUS_ENDPOINT_URL varaible
+> This will make is so your scene uses local: "ws://127.0.0.1:2567" from the `COLYSEUS_ENDPOINT_URL` varaible
 
 
 Full instructions for running the proxy server can be found here Instructions here [https://github.com/decentraland-scenes/inworlds-colyseus-proxy-service#readme](https://github.com/decentraland-scenes/inworlds-colyseus-proxy-service#readme)
@@ -131,8 +131,8 @@ npm i -g decentraland
 
 Download this example and navigate to its directory, then run:
 
-```
-$:  dcl start
+```bash
+$ dcl start
 ```
 
 Any dependencies are installed and then the CLI opens the scene in a new browser tab.
